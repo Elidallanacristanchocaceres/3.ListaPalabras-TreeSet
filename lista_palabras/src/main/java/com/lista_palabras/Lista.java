@@ -22,13 +22,20 @@ public class Lista {
             }
         }
 
-        // 3.palabras ordenadas alfa
+        // 3.orden alfa
         System.out.println("\n📌 Palabras ordenadas:");
         for (String palabra : palabras) {
             System.out.println("- " + palabra);
         }
 
-       
+        // 4.buscar palabra
+        System.out.print("\nIngrese la palabra que desea buscar: ");
+        String palabraBuscar = scanner.nextLine();
+        if (palabras.contains(palabraBuscar)) {
+            System.out.println("✅ La palabra '" + palabraBuscar + "' está en la lista.");
+        } else {
+            System.out.println("❌ La palabra '" + palabraBuscar + "' no está registrada.");
+        }
 
         scanner.close();
     }
