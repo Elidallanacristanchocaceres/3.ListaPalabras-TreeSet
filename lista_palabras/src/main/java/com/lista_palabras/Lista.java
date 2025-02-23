@@ -22,6 +22,12 @@ public class Lista {
             }
         }
 
+        // 3.palabras ordenadas alfa
+        System.out.println("\n📌 Palabras ordenadas:");
+        for (String palabra : palabras) {
+            System.out.println("- " + palabra);
+        }
+
        
 
         scanner.close();
